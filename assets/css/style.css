@@ -1,0 +1,180 @@
+#box{ 
+    background-color: palevioletred;
+    position: absolute;
+    height:70%;
+    width: 60%;
+    left: 20%;
+    top: 20%;
+    border: 10px solid paleturquoise;
+    margin: auto;
+  }
+
+
+h1 {
+    color: peachpuff;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 5px;
+
+}
+
+#question1 {
+    color: peachpuff;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 34px;
+    padding: 20px;
+}
+
+#Wins{
+    color: peachpuff;
+    font-family: 'VT323', monospace;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+
+#Losses{
+    color: peachpuff;
+    font-family: 'VT323', monospace;
+    text-align: left;
+    font-size: 24px;
+    margin-right: 80px;
+    float: right;
+    margin-top: -25px;
+}
+
+
+#BBS {
+    background-color: rgb(218, 72, 121);
+    padding: 1px 20px;
+    border-radius: 8px;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: peachpuff;
+    border: 2px solid peachpuff;
+    cursor: pointer;
+    box-shadow: 0 5px rgb(148, 211, 211);
+    margin-left: 150px;
+    float: left;
+}
+
+#NSync {
+    background-color: rgb(218, 72, 121);
+    padding: 1px 20px;
+    border-radius: 8px;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: peachpuff;
+    border: 2px solid peachpuff;
+    cursor: pointer;
+    box-shadow: 0 5px rgb(148, 211, 211);
+    margin-right: 150px;
+    float: right;
+
+}
+
+#NE {
+    background-color: rgb(218, 72, 121);
+    padding: 1px 20px;
+    border-radius: 8px;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: peachpuff;
+    border: 2px solid peachpuff;
+    cursor: pointer;
+    box-shadow: 0 5px rgb(148, 211, 211);
+    margin-left: 150px;
+}
+
+#B2M {
+    background-color: rgb(218, 72, 121);
+    padding: 1px 20px;
+    border-radius: 8px;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: peachpuff;
+    border: 2px solid peachpuff;
+    cursor: pointer;
+    box-shadow: 0 5px rgb(148, 211, 211);
+    margin-right: 150px;
+    float: right;
+}
+
+#display {
+    font-family: 'VT323', monospace;
+    color: peachpuff;
+    padding-top: 70px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#start {
+    background-color: rgb(218, 72, 121);
+    padding: 1px 40px;
+    border-radius: 8px;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: peachpuff;
+    border: 2px solid peachpuff;
+    cursor: pointer;
+    box-shadow: 0 5px rgb(148, 211, 211);
+    float: right;
+    margin-right: 388px;
+}
+
+#start:hover {
+    background-color: mediumorchid;
+}
+
+#BBS:hover {
+    background-color: mediumorchid;
+}
+
+#NSync:hover {
+    background-color: mediumorchid;
+}
+
+#NE:hover {
+    background-color: mediumorchid;
+}
+
+#B2M:hover {
+    background-color: mediumorchid;
+}
+
+#BBS:active {
+    background-color: plum;
+    box-shadow: 0 5px coral;
+    transform: translateY(4px);
+}
+
+#NSync:active {
+    background-color: plum;
+    box-shadow: 0 5px coral;
+    transform: translateY(4px);
+}
+
+#NE:active {
+    background-color: plum;
+    box-shadow: 0 5px coral;
+    transform: translateY(4px);
+}
+
+#B2M:active {
+    background-color: plum;
+    box-shadow: 0 5px coral;
+    transform: translateY(4px);
+}
+
+#start:active {
+    background-color: plum;
+    box-shadow: 0 5px gold;
+    transform: translateY(4px);
+}
+
+body {
+    background-color: violet;
+}
