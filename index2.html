@@ -4,74 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="./assets/javascript/game4.js"></script>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style4.css">
-    <script src="./assets/javascript/game4.js"></script>
     <title>90's Pop Trivia</title>
     
 </head>
 <body>
     <div id="Intro">
-        <p id="start">Click the start button to begin the 90's QUIZ</p>
+        <h1 id="start">Click the start button to begin the 90's QUIZ</h1>
         <br>
         <button id="start-btn">Start game</button>
     </div>
-    <br>
     <div id="Container">
-        <form>
+        <form class="quizForm" action="" onsubmit="Validate()" method="post">
             <p class="Question">What is the name of the skit show started by a famous family?</p>
                 <input type="radio" name="skit" value="In Living Color"> In Living Color 
                 <input type="radio" name="skit" value="The Brady Bunch"> The Brady Bunch
                 <input type="radio" name="skit" value="MADTv"> MADTv
                 <input type="radio" name="skit" value="SNL"> Saturday Night Live
-                    <br>
-                    <br>
             <p class="Question">Which of these iconic girl groups coin the phrase "Girl Power"?</p>
                 <input type="radio" name="GP" value="Destiny's Child"> Destiny's Child 
                 <input type="radio" name="GP" value="TLC"> TLC
                 <input type="radio" name="GP" value="Spice Girls"> Spice Girls
                 <input type="radio" name="GP" value="Dixie Chicks"> Dixie Chicks
-                    <br>
-                    <br>
             <p class="Question">What are the name of the memebers of the boy band Backstreet Boys?</p>
                 <input type="radio" name="BS" value="Justin, JC, Lance, Joey, Chris"> Justin, JC, Lance, Joey & Chris 
                 <input type="radio" name="BS" value="AJ, Brian, Nick, Kevin, Howie"> AJ, Brian, Nick, Kevin & Howie
                 <input type="radio" name="BS" value="Nick, Jeff, Drew, Justin"> Nick, Jeff, Drew & Justin
                 <input type="radio" name="BS" value="Mark, Travis, Tom"> Mark, Travis & Tom
-                    <br>
-                    <br>
             <p class="Question">What tv show had this recongized catach-phrase "GET TO STEPPIN"?</p>
                 <input type="radio" name="catch" value="Moesha"> Moesha
                 <input type="radio" name="catch" value="Martin"> Martin
                 <input type="radio" name="catch" value="Friends"> Friends
-                <input type="radio" name="catcg" value="Sex and The City"> Sex and The City
-                    <br>
-                    <br>
+                <input type="radio" name="catch" value="Sex and The City"> Sex and The City
             <p class="Question">Which NBA franchise won the NBA Finals the most from 1990-1999?</p>
                 <input type="radio" name="NBA" value="Houston Rockets"> Houston Rockets 
                 <input type="radio" name="NBA" value="Los Angeles Lakers"> Los Angeles Lakers
                 <input type="radio" name="NBA" value="San Antonio Spurs"> San Antonio Spurs
                 <input type="radio" name="NBA" value="Chicago Bulls"> Chicago Bulls
-                    <br>
-                    <br>
             <p class="Question">The NFL host a championship game called the "Superbowl", Superbowl XXIV was located in what city and stadium in 1990?</p>
                 <input type="radio" name="NFL" value="New Orleans, Superdome"> New Orleans, Superdome 
                 <input type="radio" name="NFL" value="San Diego, Qualcomm Stadium"> San Diego, Qualcomm Stadium 
                 <input type="radio" name="NFL" value="Miami, Joe Robbie Stadium"> Miami, Joe Robbie Stadium
                 <input type="radio" name="NFL" value="Pasadena, Rose Bowl"> Pasadena, Rose Bowl
-                    <br>
-                    <br>
             <p class="Question">Which film in the 90's was the highest grossing film of decade?</p>
                 <input type="radio" name="film" value="The Lion King"> The Lion King 
                 <input type="radio" name="film" value="Jurrasic Park"> Jurrasic Park
                 <input type="radio" name="film" value="The Color Purple"> The Color Purple
                 <input type="radio" name="film" value="The Titanic"> The Titanic
         </form>
-        <br>
         <button id="submit-btn">Submit</button>
+        <div id="Clock">00:00</div>
+        <div id="Score">
+            <p class="Finish">Congrarts! You have finished the 90's Pop Quiz!</p>
+            <p class="Finish"></p>
+        </div>
     </div>
+
     
 </body>
 </html>

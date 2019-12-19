@@ -1,12 +1,13 @@
-body {
+html {
     background-color: rosybrown;
     font-family: 'Share Tech Mono', monospace;
+    padding: 20px;
 }
 #start-btn {
     font-family: 'Share Tech Mono', monospace;
     border-radius: 6px;
     padding: 5px 12px;
-    margin-left: 140px;
+    align-content: center;
     border-color: cyan;
     background-color: plum;
     
@@ -23,10 +24,15 @@ body {
     background-color: #be168c ;
     height: fit-content;
     width: fit-content;
-    margin
 }
 #submit-btn {
     font-family: 'Share Tech Mono', monospace;
     border-radius: 6px;
     padding: 5px 12px;
+}
+#start {
+    font-size: 24px;
+}
+.Question {
+    padding: 10px 20px;
 }
