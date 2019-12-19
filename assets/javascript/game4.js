@@ -76,6 +76,7 @@ window.onload = function() {
         }
         else (film === "The Lion King", film === "Jurrasic Park", film === "The Color Purple"); {
             alert("Answer #7 is wrong");
+            return
         }
     }
 }
