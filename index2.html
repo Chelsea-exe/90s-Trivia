@@ -19,7 +19,7 @@
         <button id="start-btn">Start game</button>
     </div>
     <div id="Container">
-        <form class="quizForm" action="" onsubmit="Validate()" method="post">
+        <form id="quizForm" action="" onsubmit="Validate()" method="post">
             <p class="Question">What is the name of the skit show started by a famous family?</p>
                 <input type="radio" name="skit" value="In Living Color"> In Living Color 
                 <input type="radio" name="skit" value="The Brady Bunch"> The Brady Bunch
@@ -60,7 +60,20 @@
         <div id="Clock"></div>
         <div id="Score">
             <p class="Finish">Congrarts! You have finished the 90's Pop Quiz!</p>
-            <p class="Finish"></p>
+            <p class="Finish">Let's take a look how many questions you answered correctly!</p>
+            <p class="Finish">Correct Answers: <span id="correct">0</span></p>
+            <p class="Finish">Wrong Answers: <span id="wrong">0</span></p>
+        </div>
+        <div id="Answers">
+            <h3>Below are the correct answers!!!</h3>
+            <p class="Correct-Answers">In Living Color</p>
+            <p class="Correct-Answers">Spice Girls</p>
+            <p class="Correct-Answers">AJ, Brian Nick, Kevin & Howie</p>
+            <p class="Correct-Answers">Martin</p>
+            <p class="Correct-Answers">Chicago Bulls</p>
+            <p class="Correct-Answers">New Orleans, Superdome</p>
+            <p class="Correct-Answers">The Titanic</p>
+            <button id="restart-btn">Restart</button>
         </div>
     </div>
 
