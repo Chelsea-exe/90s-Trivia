@@ -19,6 +19,9 @@
         <button id="start-btn">Start game</button>
     </div>
     <div id="Container">
+        <div id="void">
+            <p class="alert">Please answer all the questions</p>
+        </div>
         <form id="quizForm" action="" onsubmit="Validate()" method="post">
             <p class="Question">What is the name of the skit show started by a famous family?</p>
                 <input type="radio" name="skit" value="In Living Color"> In Living Color 
@@ -65,6 +68,7 @@
             <p class="Finish">Wrong Answers: <span id="wrong">0</span></p>
         </div>
         <div id="Answers">
+
             <h3>Below are the correct answers!!!</h3>
             <p class="Correct-Answers">In Living Color</p>
             <p class="Correct-Answers">Spice Girls</p>
@@ -73,10 +77,13 @@
             <p class="Correct-Answers">Chicago Bulls</p>
             <p class="Correct-Answers">New Orleans, Superdome</p>
             <p class="Correct-Answers">The Titanic</p>
-            <button id="restart-btn">Restart</button>
+            <button class="restart-btn">Restart</button>
+        </div>
+        <div id="restart">
+        <p class="timeUp">Time is up, you didn't complete the quiz.</p>
+        <p class="timeUp">Press the restart button to restar the quiz.</p>
+        <button class="restart-btn">Restart</button>
         </div>
     </div>
-
-    
 </body>
 </html>

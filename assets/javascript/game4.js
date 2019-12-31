@@ -1,22 +1,28 @@
 var time = 120;
 var intervalId;
-var answers = ["In Living Color", "Spice Girls", "AJ, Brian, Nick, Kevin & Howie", "Martin", "Chicago Bulls", "New Orleans, Superdome", "The Titanic"];
-var answersToGuess = ["The Brady Bunch", "MADTv", "Saturday Night Live", "Destiny's Child", "Spice Girls", "Dixie Chicks", "Justin, JC, Lance, Joey, Chris",
-"Nick, Jeff, Drew & Justin", "Mark, Travis & Tom", "Moesha", "Friends", "Sex and The City", "Los Angeles Lakers", "San Antonio Spurs", "Houston Rockets",
-"San Diego, Qualcomm Stadium", "Miami, Joe Robbie Statdium", "Pasadena, Rose Bowl", "The Lion King", "Jurrasic Park", "The Color Purple", "In Living Color", 
-"Spice Girls", "AJ, Brian, Nick, Kevin & Howie", "Martin", "Chicago Bulls", "New Orleans, Superdome", "The Titanic"];
-var guesses = [];
+//var answers = ["In Living Color", "Spice Girls", "AJ, Brian, Nick, Kevin & Howie", "Martin", "Chicago Bulls", "New Orleans, Superdome", "The Titanic"];
+//var answersToGuess = ["The Brady Bunch", "MADTv", "Saturday Night Live", "Destiny's Child", "Spice Girls", "Dixie Chicks", "Justin, JC, Lance, Joey, Chris",
+//"Nick, Jeff, Drew & Justin", "Mark, Travis & Tom", "Moesha", "Friends", "Sex and The City", "Los Angeles Lakers", "San Antonio Spurs", "Houston Rockets",
+//"San Diego, Qualcomm Stadium", "Miami, Joe Robbie Statdium", "Pasadena, Rose Bowl", "The Lion King", "Jurrasic Park", "The Color Purple", "In Living Color", 
+//"Spice Girls", "AJ, Brian, Nick, Kevin & Howie", "Martin", "Chicago Bulls", "New Orleans, Superdome", "The Titanic"];
+//var guesses = [];
 var correct = 0;
 var wrong = 0;
 window.onload = function() {
     $('#Container').hide();
+    $('#restart').hide();
     $('#start-btn').on('click', function() {
-        $('#Container').toggle();
+        quiz();
+    })
+    function quiz() {
+        $('#Container').show();
+        $('#void').hide();
         $('#Intro').hide();
         $('#Score').hide();
         $('#Answers').hide();
+        $('#restart').hide();
         console.log("Quiz has started!");
-    });
+    }
     $('#start-btn').on('click', function() {
         run();
     })
@@ -29,8 +35,14 @@ window.onload = function() {
         time--;
         $('#Clock').html("<h1>" + time + " " + "SECONDS LEFT" + "</h1>");
         if (time === 0) {
-            alert("TIME IS UP, QUIZ IS OVER!!!");
+            //alert("TIME IS UP, QUIZ IS OVER!!!");
             stop();
+            $('#restart').show();
+            $('#Score').hide();
+            $('#quizForm').hide();
+            $('#Clock').hide();
+            $('#Answers').hide();
+            $('#submit-btn').hide();
             console.log("Timer has stopped!");
         }
     }
@@ -68,7 +80,9 @@ window.onload = function() {
         responses = [skit, girlPower, boyBand, tvShow, nba, nfl, film];
         for(i = 0; i < responses.length; i++) {
             if (responses[i] === undefined) {
-                alert("answer all questions please");
+                //alert("answer all questions please");
+                $('#void').show();
+                console.log("alert message!!!"); 
                 return
             }
         }
@@ -147,7 +161,11 @@ window.onload = function() {
         $('#quizForm').hide();
         $('#Clock').hide();
         $('#Answers').show();
-        $('#submit-btn').hide();
+        $('#submit-btn').hide();  
     }
-    
+
+    $('.restart-btn').on('click', function () {
+        location.reload();
+        console.log("Page has been refreshed!");
+    })
 }
