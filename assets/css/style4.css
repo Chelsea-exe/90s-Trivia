@@ -24,6 +24,7 @@ html {
     background-color: #be168c ;
     height: fit-content;
     width: fit-content;
+    margin: 120px 0 0 190px;
 }
 #submit-btn {
     font-family: 'Share Tech Mono', monospace;
@@ -35,4 +36,12 @@ html {
 }
 .Question {
     padding: 10px 20px;
+}
+.alert {
+    font-size: 24px;
+    color: white;
+    margin-left: 320px;
+}
+input {
+    margin-left: 13px;
 }

@@ -43,6 +43,7 @@ window.onload = function() {
             $('#Clock').hide();
             $('#Answers').hide();
             $('#submit-btn').hide();
+            $('#void').hide();
             console.log("Timer has stopped!");
         }
     }
@@ -52,7 +53,7 @@ window.onload = function() {
     }
     $('#submit-btn').on('click', function() {
         Validate();
-        stop();
+        //stop();
     });
     function Validate () {
         var skit = "In Living Color";
@@ -161,9 +162,9 @@ window.onload = function() {
         $('#quizForm').hide();
         $('#Clock').hide();
         $('#Answers').show();
-        $('#submit-btn').hide();  
+        $('#submit-btn').hide();
+        console.log("Scores and answers displayed!");
     }
-
     $('.restart-btn').on('click', function () {
         location.reload();
         console.log("Page has been refreshed!");
