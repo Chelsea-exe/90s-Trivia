@@ -1,4 +1,5 @@
-# Chelsea Jackson unit-4-game
-I tried to create a 90's trivia with 
-a few questions about a few events during the 90's
-as I started to develop the Javascript I noticed none of a buttons were sending alerts of the user having the question right. Also tried looking at the trivia game to "create a new question" after the user clicked on the button but that didn't work. So I kept it with just 1 of my questions, Also using the timer, via the Interval being 30 secs. but that didn't work either. I looked via console.log and it kept telling "Uncaught ReferenceError" $ is not defined. I looked at the Interval activity and changed it to my id's. I looked online, plenty of youtube videos and console keeps telling me the same message but on VS Code it's not telling me there's any errors of any of the codes.
+WELCOME TO THE 90'S TRIVIA GAME!!!!
+You will be quized on various topics that happened within the 90's era.
+You have 2 minutes to remember these events and answer the following questions.
+Do you think you remember certain events that happened during the "Golden Era"?
+Click the start button to begin the trivia. Good luck!!

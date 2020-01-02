@@ -14,13 +14,21 @@
 </head>
 <body>
     <div id="Intro">
-        <h1 id="start">Click the start button to begin the 90's QUIZ</h1>
+        <h1 id="start">WELCOME TO THE 90'S TRIVIA GAME</h1>
+        <p class="directions">You will be quized on various topics that happened within the 90's era.
+            <br>
+            You have 2 minutes to remember these events and answer the following questions.
+            <br>
+            Do you think you remember certain events that happened during the "Golden Era"?
+            <br>
+            Click the start button to begin the trivia. Good luck!!
+        </p>
         <br>
         <button id="start-btn">Start game</button>
     </div>
     <div id="Container">
         <div id="void">
-            <p class="alert">Please answer all the questions</p>
+            <p class="alert">*Please answer all the questions*</p>
         </div>
         <form id="quizForm" action="" onsubmit="Validate()" method="post">
             <p class="Question">1. What is the name of the skit show started by a famous family?</p>
@@ -61,29 +69,26 @@
         </form>
         <button id="submit-btn">Submit</button>
         <div id="Clock"></div>
-        <div id="Score">
-            <p class="Finish">Congrarts! You have finished the 90's Pop Quiz!</p>
-            <p class="Finish">Let's take a look how many questions you answered correctly!</p>
-            <p class="Finish">Correct Answers: <span id="correct">0</span></p>
-            <p class="Finish">Wrong Answers: <span id="wrong">0</span></p>
-        </div>
-        <div id="Answers">
-
-            <h3>Below are the correct answers!!!</h3>
-            <p class="Correct-Answers">In Living Color</p>
-            <p class="Correct-Answers">Spice Girls</p>
-            <p class="Correct-Answers">AJ, Brian Nick, Kevin & Howie</p>
-            <p class="Correct-Answers">Martin</p>
-            <p class="Correct-Answers">Chicago Bulls</p>
-            <p class="Correct-Answers">New Orleans, Superdome</p>
-            <p class="Correct-Answers">The Titanic</p>
-            <button class="restart-btn">Restart</button>
-        </div>
-        <div id="restart">
-        <p class="timeUp">Time is up, you didn't complete the quiz.</p>
-        <p class="timeUp">Press the restart button to restar the quiz.</p>
-        <button class="restart-btn">Restart</button>
-        </div>
+    </div>
+    <div id="Score">
+        <h1 id="Congrats">Congrarts! You have finished the 90's Pop Quiz!</h1>
+        <p class="Finish">Let's take a look how many questions you answered correctly!</p>
+        <p class="Finish">Correct Answers: <span id="correct">0</span></p>
+        <p class="Finish">Wrong Answers: <span id="wrong">0</span></p>
+        <h3>Below are the correct answers!!!</h3>
+        <p class="Correct-Answers">1. In Living Color</p>
+        <p class="Correct-Answers">2. Spice Girls</p>
+        <p class="Correct-Answers">3. AJ, Brian Nick, Kevin & Howie</p>
+        <p class="Correct-Answers">4. Martin</p>
+        <p class="Correct-Answers">5. Chicago Bulls</p>
+        <p class="Correct-Answers">6. New Orleans, Superdome</p>
+        <p class="Correct-Answers">7. The Titanic</p>
+        <button class="restart-btn2">Restart</button>
+    </div>
+    <div id="restart">
+    <p class="timeUp">Time is up, you didn't complete the quiz.</p>
+    <p class="timeUp">Press the restart button to restart the quiz.</p>
+    <button class="restart-btn">Restart</button>
     </div>
 </body>
 </html>
