@@ -3,4 +3,4 @@ You will be quized on various topics that happened within the 90's era.
 You have 2 minutes to remember these events and answer the following questions.
 Do you think you remember certain events that happened during the "Golden Era"?
 Click the start button to begin the trivia. Good luck!!
-<img id="readMeimg" src="./assets/images/start.png"></img> <style> #readMeimg {height: 20vh;}</style>
+<img id="readMeimg" src="./assets/images/start.png"></img>
