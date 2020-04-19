@@ -20,7 +20,7 @@ html {
     background-color: #be168c ;
     height: fit-content;
     width: fit-content;
-    margin: 80px 0 0 190px;
+    margin: 80px 0 0 200px;
     border-radius: 4px;
 }
 #submit-btn {
@@ -87,7 +87,7 @@ input {
     width: 28vw;
     margin-top: 250px;
     margin-left: 550px;
-    background-color: royalblue;
+    background-color: rgb(65, 225, 190);
     border-radius: 4px;
 }
 .restart-btn {
@@ -114,10 +114,10 @@ input {
 }
 #Score {
     background-color: rgb(253, 200, 170);
-    height: 51vh;
+    height: fit-content;
     width: 40vw;
     margin-top: 150px;
-    margin-left: 400px;
+    margin-left: 450px;
     border-radius: 4px;
 }
 #Congrats {
