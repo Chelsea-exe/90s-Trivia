@@ -76,6 +76,9 @@ window.onload = function() {
         var nba = "Chicago Bulls";
         var nfl = "New Orleans, Superdome";
         var film = "Titanic";
+        var rugrats = "Angelica Pickles";
+        var DR = "Death Row";
+        var game = "1994";
 
         //input $([name = "variable"]:checked).val(); is checking the value that was selected from the input radio form
 
@@ -93,8 +96,14 @@ window.onload = function() {
         console.log(nfl);
         var film = $('input[name = "film"]:checked').val();
         console.log(film);
+        var rugrats = $('input[name = "rugrats"]:checked').val();
+        console.log(rugrats);
+        var DR = $('input[name = "DR"]:checked').val();
+        console.log(DR);
+        var game = $('input[name = "game"]:checked').val();
+        console.log(game);
         //responses is a array of the variable
-        responses = [skit, girlPower, boyBand, tvShow, nba, nfl, film];
+        responses = [skit, girlPower, boyBand, tvShow, nba, nfl, film, rugrats, DR, game];
         //for loop index = 0, if the index of responses isn't selected then then the responses is undefined and a message from the void div will appear
         for(i = 0; i < responses.length; i++) {
             if (responses[i] === undefined) {
@@ -178,6 +187,30 @@ window.onload = function() {
          //   alert("Answer #7 is wrong = The Titanic");
          wrong++;
          document.querySelector("#wrong").innerHTML = wrong;
+        }
+        if (rugrats === "Angelica Pickles") {
+            correct++;
+            document.querySelector("#correct").innerHTML = correct;
+        }
+        else {
+            wrong++;
+            document.querySelector("#wrong").innerHTML = wrong;
+        }
+        if (DR === "Death Row") {
+            correct++;
+            document.querySelector("#correct").innerHTML = correct;
+        }
+        else {
+            wrong++;
+            document.querySelector("#wrong").innerHTML = wrong;
+        }
+        if (game === "1994") {
+            correct++;
+            document.querySelector("#correct").innerHTML = correct;
+        }
+        else {
+            wrong++;
+            document.querySelector("#wrong").innerHTML = wrong;
         }
         $('#Score').show();
         $('#quizForm').hide();
