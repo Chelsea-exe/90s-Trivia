@@ -2,19 +2,12 @@
 var time = 120;
 var intervalId;
 
-//var answers = ["In Living Color", "Spice Girls", "AJ, Brian, Nick, Kevin & Howie", "Martin", "Chicago Bulls", "New Orleans, Superdome", "The Titanic"];
-//var answersToGuess = ["The Brady Bunch", "MADTv", "Saturday Night Live", "Destiny's Child", "Spice Girls", "Dixie Chicks", "Justin, JC, Lance, Joey, Chris",
-//"Nick, Jeff, Drew & Justin", "Mark, Travis & Tom", "Moesha", "Friends", "Sex and The City", "Los Angeles Lakers", "San Antonio Spurs", "Houston Rockets",
-//"San Diego, Qualcomm Stadium", "Miami, Joe Robbie Statdium", "Pasadena, Rose Bowl", "The Lion King", "Jurrasic Park", "The Color Purple", "In Living Color", 
-//"Spice Girls", "AJ, Brian, Nick, Kevin & Howie", "Martin", "Chicago Bulls", "New Orleans, Superdome", "The Titanic"];
-//var guesses = [];
-
 //setting variables that will count the users correct and wrong answers in the Score div
 var correct = 0;
 var wrong = 0;
 
 
-window.onload = function() {
+ $(document).ready(function() {
     $('#Container').hide();
     $('#restart').hide();
     $('#Score').hide();
@@ -228,4 +221,4 @@ window.onload = function() {
         location.reload();
         console.log("Page has been refreshed!");
     })
-}
+});
